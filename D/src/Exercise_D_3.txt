@@ -1,0 +1,15 @@
+//Chance Meister-Ham
+
+Question A) Which principle Hans and Grete are 
+using to find they way back, Stack or queue?
+
+Answer A) The stack principle, they are leaving crumbs and finding their way back
+by picking up the last one they dropped.
+
+Question B) Which principle does the computer use 
+to find its way back then i get “lost” in method calls? 
+
+Answer B) The stack principle, when you call a method it is put on the stack
+and if that method calls other methods and so on, those other methods will also be
+put on the stack. Once the "last" method is called it will be removed from the stack and
+code will contiue from their, repeating that procces until it has returned all the way to main

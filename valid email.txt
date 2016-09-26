@@ -1,0 +1,52 @@
+    
+	Legal Character:
+		Uppercase and lowercase English letters (a-z, A-Z)
+		Digits 0 to 9.
+		Characters ! # $ % & ' * + - / = ? ^ _ ` { ...
+		Character .
+	
+	{Random legal characters}@{Random legal characters}.{legal subdomain}
+	
+	
+    The local-part of the e-mail address may use any of these ASCII characters:
+
+        Uppercase and lowercase English letters (a-z, A-Z)
+        Digits 0 to 9
+        Characters ! # $ % & ' * + - / = ? ^ _ ` { | } ~
+        Character . (dot, period, full stop) provided that it is not the first or last character, and provided also that it does not appear two or more times consecutively.
+
+
+		
+		illegal examples
+		
+	.bla@woop.com
+	bla.@woop.com
+	@bla@woop.com
+	bla@@woop.com
+	bla"bla"@woop.com
+	bla@.woop.com
+	bla@woop@com
+	bla@woop.
+	bla@woop.com.
+	
+	plainaddress
+	#@%^%#$@#$@#.com
+	@example.com
+	Joe Smith <email@example.com>
+	email.example.com
+	email@example@example.com
+	.email@example.com
+	email.@example.com
+	email..email@example.com
+	あいうえお@example.com
+	email@example.com (Joe Smith)
+	email@example
+	email@-example.com
+	email@example.web
+	email@111.222.333.44444
+	email@example..com
+	Abc..123@example.com
+	
+	AIzaSyAzGwg7Cld_ruZ_wUfE0FtCLH-FsFG64uc 
+	
+	55.704020, 12.537474

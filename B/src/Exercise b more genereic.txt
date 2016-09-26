@@ -1,0 +1,33 @@
+//    public static <T> List<T> alternate(List<T> listA, List<T> listB)
+//    {
+//        if (!listA.getClass().equals(listB.getClass()))
+//        {
+//            return null;
+//        }
+//
+//         list;
+//        Iterator a;
+//        Iterator b;
+//        boolean alt;
+//
+//        list = new ;
+//
+//
+//        a = listA.iterator();
+//        b = listB.iterator();
+//
+//        alt = false;
+//
+//        while (a.hasNext() || b.hasNext())
+//        {
+//            if (alt)
+//            {
+//
+//            }
+//
+//        }
+//
+//        for ()
+//
+//        return new ArrayList<>();
+//    }

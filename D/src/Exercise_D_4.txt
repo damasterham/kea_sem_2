@@ -1,0 +1,12 @@
+//Chance Meister-Ham
+
+In computer science a queue is commonly used to: 
+a) hold the items you buy in a online shop.
+b) Keep track of the return path for the method calls.
+c) Holds data received from some hardware or another process until
+   our process is ready to use it.
+d) As auxiliary storage for sorting algorithms.
+
+
+Answers)
+c

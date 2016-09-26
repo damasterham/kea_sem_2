@@ -1,0 +1,26 @@
+Exercise_A_4
+Grocery List
+Chance, Jeppe
+
+GroceryList Class
+	an array of GroceryItemOrders max 10
+	can print total item prices formated with name, quatity and total price : getTotalCost
+	toString ???
+
+GroceryItemOrder Class 
+	item, quatity (default 1), price per (encapsulated/ with getters setters)
+	2 constuctrors
+		one for all values
+		one for name
+	get the total cost of the the item(s) : getCost
+	toString with name, quatity and total cost
+
+Test code by 
+	making GroceryList and filling it with GroceryItemOrders
+	Print that GroceryList
+	Adding over max amount
+	
+	Read groceries from a file and instatiate The GroceryList from that.
+	
+	Make a alternate GroceryList that uses an ArrayList instead of an array
+	

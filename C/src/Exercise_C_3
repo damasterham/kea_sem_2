@@ -1,0 +1,13 @@
+The difference in the 2 styles is
+
+one handles it with unexpected "exceptional" events
+where we are expecting certain values to be correct,
+but when they aren't we throw the problem back to something that can handle it.
+
+and the other handles it with flow of control, where we
+know the various expected outcomes and handle them appropriatly.
+None of it is exceptional.
+
+
+The code using exception is the one that obtains design rules explained by
+the family and door salesman example.
