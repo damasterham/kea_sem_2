@@ -1,0 +1,4 @@
+O(1) since it uses a hashing function for each element
+therefore it only needs to go through one operation
+to find what ever is requested regardless of the number
+of elements it contains.

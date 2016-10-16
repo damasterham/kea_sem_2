@@ -1,0 +1,5 @@
+Searching through a Binary Tree is done by
+recursively comparing its nodes to your given parameter.
+
+Starting at root it will compare the data, if the parameter is less it will continue to the left node
+if the parameter is greater it will continue to the right. When the comparison is equal the data has been found.

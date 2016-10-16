@@ -1,0 +1,16 @@
+Question: (Ch9 Inherintace - Interfaces & abstract class)
+After implementing an interface or extending an abstract class (with abstract methods), 
+what do you need to do so your class will work and compile?
+
+1) add an empty constructor
+2) override methods as private methods
+3) override methods as public methods
+4) add the same fields as the parent
+5) it already works
+
+Answer:
+3) Overriding the methods defined by the interface or abstract class as public.
+They cannot be private as it makes no sense since the whole point of 
+interface- and abstract methods is polymorphism, that they
+are used by other classes and not just themselves.
+

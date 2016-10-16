@@ -1,0 +1,23 @@
+Question: (Ch9.5 Inheritence - Abstract class)
+
+How do you inherit from another class to your class
+
+public class MyClass ????
+{
+	private int nr;
+	
+	public MyClass(int nr)
+	{
+		this.nr = nr;
+	}
+}
+
+
+Answer:
+
+use the extends keyword
+
+public class MyClass extends MasterClass
+{
+	...
+}

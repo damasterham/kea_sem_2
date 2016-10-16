@@ -1,0 +1,14 @@
+Question: (Ch11.1 Collections - Pg731)
+
+From the java Collection framework
+which Interfaces implement the Collection Interface?
+
+1) List
+2) Map
+3) Comparable
+4) Set
+5) ActionListener
+
+
+Answer:
+1) List & 4) Set

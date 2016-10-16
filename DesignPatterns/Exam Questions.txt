@@ -1,0 +1,1 @@
+How does the singleton pattern in java, deny access to its contructor?

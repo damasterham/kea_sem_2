@@ -2,8 +2,6 @@
 Can you explain what a Binary Tree can do and what it is good for?
 Write your answers as 5-10 sentences you can use as notes to the exam.
 
-A Binary Tree is a datastrucre consisting of a root node with data and 2 comparable nodes.
-A Binary Tree is useful for searching through comparable data, as using can use the
-"halving-principle" to easly find comparable data you are looking for.
-
-"halving-principle"?
+A Binary Tree is a data structure consisting of a root node with data and 2 comparable nodes.
+A Binary Tree is useful for searching through sorted comparable data, as you need to go through
+less steps to find what your looking for in comparison to looking through an array.

@@ -6,16 +6,14 @@
 // documentation refers to these as "sequential trees."
 
 
-import java.util.List;
-
-public class Exercise_E_5
+public class Exercise_E_6
 {
     private IntTreeNode overallRoot;
 
     // pre : max > 0
     // post: constructs a sequential tree with given number of
     //       nodes
-    public Exercise_E_5(int max) {
+    public Exercise_E_6(int max) {
         if (max <= 0) {
             throw new IllegalArgumentException("max: " + max);
         }
@@ -156,7 +154,7 @@ public class Exercise_E_5
         return countEmpty(this.overallRoot);
     }
 
-    // Ch17Ex3 - Exercise_E_5
+    // Ch17Ex3
     private int depthSum(IntTreeNode root, int depth)
     {
         int sum;
@@ -179,26 +177,53 @@ public class Exercise_E_5
         return depthSum(this.overallRoot, 1);
     }
 
+
+    private void doublePositives(IntTreeNode root)
+    {
+        if (root != null)
+        {
+            if (root.data > 0)
+            {
+                root.data *= 2;
+            }
+            doublePositives(root.left);
+            doublePositives(root.right);
+        }
+    }
+
+    public void doublePositives()
+    {
+        doublePositives(this.overallRoot);
+    }
+
     public static void main(String[] args)
     {
-        Exercise_E_5 tree1;
-        Exercise_E_5 tree2;
-        Exercise_E_5 tree3;
+        Exercise_E_6 tree1;
+        Exercise_E_6 tree2;
+        Exercise_E_6 tree3;
 
-        tree1 = new Exercise_E_5(6);
-        tree2 = new Exercise_E_5(9);
-        tree3 = new Exercise_E_5(8);
+        tree1 = new Exercise_E_6(6);
+        tree2 = new Exercise_E_6(9);
+        tree3 = new Exercise_E_6(8);
 
-        tree1.printSideways();
+        System.out.println("Before doubling");
+        tree1.printInorder();
         System.out.println("------------------------------------------");
-        tree2.printSideways();
+        tree2.printInorder();
         System.out.println("------------------------------------------");
+        tree3.printInorder();
+        System.out.println();
 
-        tree3.printSideways();
+        tree1.doublePositives();
+        tree2.doublePositives();
+        tree3.doublePositives();
 
-        System.out.println("tree1 depth sum is " + tree1.depthSum());
-        System.out.println("tree2 depth sum is " + tree2.depthSum());
-        System.out.println("tree3 depth sum is " + tree3.depthSum());
-
+        System.out.println("After doubling");
+        tree1.printInorder();
+        System.out.println("------------------------------------------");
+        tree2.printInorder();
+        System.out.println("------------------------------------------");
+        tree3.printInorder();
+        System.out.println();
     }
 }

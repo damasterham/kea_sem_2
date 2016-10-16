@@ -1,17 +1,19 @@
+import java.lang.annotation.ElementType;
+
 //Created by DaMasterHam on 22-09-2016.
 //
 public class Exercise_E_12
 {
-        private boolean[] inUse;
-        private char[]    elementData;
+        private boolean[][] inUse;
+        private char[][]    elementData;
 
         private static final int SIZE = 13; // number of letters in the english alphabet
-
+        private static final int ELEMENTS = 2;
 
         public Exercise_E_12()
         {
-            inUse = new boolean[SIZE];
-            elementData = new char[SIZE];
+            inUse = new boolean[SIZE][ELEMENTS];
+            elementData = new char[SIZE][ELEMENTS];
         }
 
 
@@ -31,7 +33,7 @@ public class Exercise_E_12
         }
 
 
-        private int hashFunction(char ch)
+        private int[] hashFunction(char ch)
         {
       /*
        A returns 0
@@ -45,52 +47,77 @@ public class Exercise_E_12
        z returns 25
 
       */
+            int[] result;
+
+            result = new int[ELEMENTS];
 
 
             if (ch >= 'A' && ch <= 'Z')
             {
-                return ch - 'A';
+                int iCh = ch - 'A';
+
+                result[0] = iCh / 2;
+
+                if ((iCh % 2) == 0)
+                {
+                    result[1] = 0;
+                }
+                else
+                {
+                    result[1] = 1;
+                }
             }
 
             if (ch >= 'a' && ch <= 'z')
             {
-                return ch - 'a';
+                int iCh = ch - 'a';
+
+                result[0] = iCh / 2;
+
+                if ((iCh % 2) == 0)
+                {
+                    result[1] = 0;
+                }
+                else
+                {
+                    result[1] = 1;
+                }
             }
 
-            return 0;
+            return result;
         }
 
 
         public void add(char ch)
         {
-            int code;
+            int[] code;
 
             code = hashFunction(ch);
 
-            inUse[code] = true;
-            elementData[code] = ch;
+            inUse[code[0]][code[1]] = true;
+            elementData[code[0]][code[1]] = ch;
         }
 
 
         public boolean contains(char ch)
         {
-            int code;
+            int[] code;
             boolean result;
 
             code = hashFunction(ch);
 
-            result = inUse[code];
+            result = inUse[code[0]][code[1]];
             return result;
         }
 
 
         public void remove(char ch)
         {
-            int code;
+            int[] code;
 
             code = hashFunction(ch);
 
-            inUse[code] = false;
+            inUse[code[0]][code[1]] = false;
         }
 
 
@@ -100,10 +127,14 @@ public class Exercise_E_12
 
             for (int i = 0; i < SIZE; i++)
             {
-                if (inUse[i])
+                for (int j = 0; j < ELEMENTS; j++)
                 {
-                    str += elementData[i] + " ";
+                    if (inUse[i][j])
+                    {
+                        str += elementData[i][j] + " ";
+                    }
                 }
+
             }
             str += "]";
 
@@ -114,7 +145,6 @@ public class Exercise_E_12
         public static void main(String[] args)
         {
             Exercise_E_12 myHashSet;
-            String    str;
 
             myHashSet = new Exercise_E_12();
 
@@ -123,7 +153,6 @@ public class Exercise_E_12
                 myHashSet.add((char)i);
             }
 
-            str = myHashSet.toString();
 
 
             lasseTest(myHashSet);
@@ -144,10 +173,7 @@ public class Exercise_E_12
             System.out.println("Contains Z");
         }
 
-        if (!myHashSet.contains('M'))
-        {
-            System.out.println("Does not contain M");
-        }
+
 
 
         myHashSet.remove('Z');
@@ -157,5 +183,11 @@ public class Exercise_E_12
             System.out.println("Does no longer contains Z");
         }
 
+        myHashSet.remove('m');
+
+        if (!myHashSet.contains('M'))
+        {
+            System.out.println("Does not contain M");
+        }
     }
 }

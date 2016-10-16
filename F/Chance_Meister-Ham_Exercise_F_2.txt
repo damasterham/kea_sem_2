@@ -1,0 +1,12 @@
+Question: (Ch13 - Big O / Searching & Sorting)
+What is the fastet Big O?
+
+1) O(n)
+2) O(log(n))
+3) O(n^2)
+4) O(1)
+5) O(2^n)
+
+
+Answer:
+4) O(1)

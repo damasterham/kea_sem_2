@@ -1,0 +1,23 @@
+Question: (Ch9.5 Inheritence - Interfaces)
+
+How do you inherit from an interface to your class
+
+public class MyClass ????
+{
+	private int nr;
+	
+	public MyClass(int nr)
+	{
+		this.nr = nr;
+	}
+}
+
+
+Answer:
+
+use the implements keyword
+
+public class MyClass implements SomeInterface
+{
+	...
+}

@@ -1,0 +1,48 @@
+Question: (Ch9.2 Interacting with SuperClass)
+
+When extending from an superclass that has a contructor with parameters,
+how do you call that superclass' constructor from your inherited class?
+
+
+public MyParentClass
+{
+	private int nr;
+	
+	public MyParentClass(int nr)
+	{
+		this.nr = nr;
+	}
+}
+
+public class MyClass extends
+{
+	
+	public MyClass(int nr)
+	{
+		???
+	}
+}
+
+
+Answer:
+
+use the super() method to access a parent constructor
+
+
+public MyParentClass
+{
+	private int nr;
+	
+	public MyParentClass(int nr)
+	{
+		this.nr = nr;
+	}
+}
+
+public class MyClass extends MyParentClass
+{
+	public MyClass(int nr)
+	{
+		super(nr);
+	}
+}

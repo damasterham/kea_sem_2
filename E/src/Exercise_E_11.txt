@@ -1,0 +1,5 @@
+This will add more code to the hash function,
+since we go through an extra layer to access our data,
+but the "order" will remain the same.
+
+O(1);

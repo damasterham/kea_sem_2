@@ -1,0 +1,3 @@
+We can add another layer to be able to store 26 characters in half the space.
+Instead of having just the data as a result, we can have the data stored in arrays.
+So we can have a multi layered char array (char[13][2])
