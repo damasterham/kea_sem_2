@@ -1,0 +1,14 @@
+Ch 13 - Exercise 7
+Question:
+To which complexity class does the following algorithm belong?
+public static void mystery4(List<String> list) {
+    for (int i = 0; i < list.size() – 1; i += 2) {
+        String first = list.get(i);
+        list.set(i, list.get(i + 1));
+        list.set(i + 1, first);
+    }
+}
+
+O(N/2)
+
+Does the same thing as the exercise before, just uses set instead of removing and adding.

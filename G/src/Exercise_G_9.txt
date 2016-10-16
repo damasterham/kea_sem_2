@@ -1,0 +1,13 @@
+Ch 13 - Selfcheck 11.
+Question:
+Approximate the runtime of the following code fragment, in terms of n:
+
+int sum = 0;								1
+for (int i = 1; i <= n * 2; i++) {			N*2
+  for (int j = 1; j <= n; j++) {			1*N
+    sum++;
+  }
+}
+
+Answer:
+1N+2N+1

@@ -1,0 +1,6 @@
+Ch 13 - Selfcheck 4.
+Question:
+Under what circumstances can the Arrays.binarySearch and Collections.binarySearch methods be used successfully?
+
+Answer:
+The methods need sorted data to be used successfully.

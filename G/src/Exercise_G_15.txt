@@ -1,0 +1,15 @@
+Ch 13 - Exercise 6
+Question:
+To which complexity class does the following algorithm belong?
+public static void mystery3(List<String> list) {
+    for (int i = 0; i < list.size() – 1; i += 2) {
+        String first = list.remove(i);
+        list.add(i + 1, first);
+    }
+}
+
+Answer:
+0(N/2)
+
+Since we use the list size, but iterate up by 2, so the operations will be halved.
+the size does not change, since we are both removing and adding again

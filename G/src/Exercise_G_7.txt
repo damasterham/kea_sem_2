@@ -1,0 +1,21 @@
+Ch 13 - Selfcheck 9.
+Question:
+Approximate the runtime of the following code fragment, in terms of n:
+
+int sum = 0;		2
+int j = 1;
+while (j <= n) {	2*log2(N)
+  sum++;			
+  j = j * 2;
+}
+
+Answer:
+2*log2(N)+2
+
+could also be considered to be
+log2(n)+1
+since to of the statements could be considered part of the loop, ergo:
+int sum = 0;
+for (int j =1; j <= n; j = j * 2) {
+  sum++;
+}

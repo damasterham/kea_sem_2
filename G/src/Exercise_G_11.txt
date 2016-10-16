@@ -1,0 +1,17 @@
+Ch 13 - Exercise 2
+Question:
+Suppose the following array has been declared:
+// index       0   1  2   3   4   5   6   7   8   9    10  11
+int[] list = {–23, 4, 48, 54, 47, 78, 15, 44, 75, 479, 49, 73};
+What indexes will be examined as the by a sequential search for each of the following target values?
+What value will be returned?
+a. 73
+b. 4
+c. 15
+d. 479
+
+Answer:
+a. 0-11 examined, 11 returned
+b. 0-1 examined, 1 returned
+c. 0-6 examined, 6 returned
+d. 0-9 examined, 9 returned

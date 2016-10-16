@@ -1,0 +1,16 @@
+Ch 13 - Exercise 5
+Question:
+To which complexity class does the following algorithm belong?
+public static void mystery2(int[] list) {
+    for (int i = 0; i < list.length / 2; i++) {
+        int j = list.length – 1 – i;
+        int temp = list[i];
+        list[i] = list[j];
+        list[j] = temp;
+    }
+}
+
+Answer:
+O(N/2)
+
+Since we are using the list length divided by 2 in the for loop

@@ -1,0 +1,9 @@
+Ch 13 - Selfcheck 3.
+Question:
+Should you use a sequential or binary search on an array of Point objects, and why?
+
+Answer:
+If we just use Java's Point object we would only be able to use sequential search, since Point does not implement the Comparable interface (or Comparator class) needed for sorting data.
+If we asume that we implement the Comparable ourselves and the array is sorted, we should use a binary search, since a Point is now comparable.
+Binary search is faster since it uses O(log n), instead of the sequential O(n).
+So the optimal solution is implementing the Comparable interface and using binary, but per default, sequential is the solution.

@@ -1,0 +1,15 @@
+Ch 13 - Selfcheck 10.
+Question:
+Approximate the runtime of the following code fragment, in terms of n:
+
+int sum = 0;						1
+for (int j = 1; j < n; j++) {		1*N-1
+    sum++;
+    if (j % 2 == 0) {				1*N/2-1
+      sum++;
+    }
+}
+
+Answer:
+1N/2-1+1N-1+1
+

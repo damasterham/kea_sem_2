@@ -1,0 +1,19 @@
+Ch 13 - Exercise 4
+Question:
+To which complexity class does the following algorithm belong? Consider N to be the length or size of the array or
+collection passed to the method. Explain your reasoning.
+
+public static int[] mystery1(int[] list) {
+    int[] result = new int[2 * list.length];
+    for (int i = 0; i < list.length; i++) {
+        result[2 * i] = list[i] / 2 + list[i] % 2;
+        result[2 * i + 1] = list[i] / 2;
+    }
+    return result;
+}
+
+Answer:
+O(N)
+
+We pass the parameter list with a size of N
+we only use a single for loop wich uses the length of list, ergo N
